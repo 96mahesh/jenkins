@@ -1,0 +1,8 @@
+<suite name ="nop commerce functionalcases" >
+    <test name ="nop commerce homepage functional cases">
+        <classes>
+            <class name ="nop.commerce.testscripts.LoginPageTest" />
+        </classes>
+
+    </test>
+</suite>

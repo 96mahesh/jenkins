@@ -1,17 +1,18 @@
 package com.nopcommerce.utils;
 
+
+
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ReadData {
     private FileInputStream instream;
-    private XSSFWorkbook workbook;
-    private XSSFSheet sheet;
+    public XSSFWorkbook workbook;
+    public XSSFSheet sheet;
 
     public ReadData(String filename) throws Exception {
         String filepath=".\\src\\main\\resources\\testdata\\"+filename+".xlsx";
@@ -103,4 +104,6 @@ return info;
           System.out.println();
       }
     }
+
 }
+
