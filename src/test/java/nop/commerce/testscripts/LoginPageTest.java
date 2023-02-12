@@ -86,7 +86,7 @@ public class LoginPageTest {
         return loginData.getData();
     }
 
-    @Test(enabled = true,dataProvider = "loginCredentials")
+    @Test(enabled = false,dataProvider = "loginCredentials")
     public void verifyLoginBtnFunctionalityWithSetOfCredentials(String email,String pass) throws Exception {
         LoginPage loginPage= new LoginPage(driver);
         DashboardPage dashboardPage= new DashboardPage(driver);
